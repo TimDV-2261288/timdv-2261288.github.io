@@ -177,7 +177,7 @@ div {
     display: grid;
     grid-template-columns: 1fr 1fr; /*Wordt gebruikt om header kolommen op z'n plaats te houden, voor elke kolom extra 1 fr toevoegen..*/
     grid-gap: 6.5em;
-    width: 100%;
+    width: 90%;
 }
 @media screen and (max-width: 1500px) {
     .imagetext {
