@@ -1,0 +1,224 @@
+/*HEADER GEDEELTE*/
+#Headerimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*Wordt gebruikt om header kolommen op z'n plaats te houden, voor elke kolom extra 1 fr toevoegen..*/
+    grid-gap: 0.1em;
+}
+
+#Headerimages img {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url(../Assets/PaperBG.jpg);
+    padding-right: 10px;
+    padding-left: 4px;
+}
+
+/*ALGEMEEN*/
+li{
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.quoting{
+    background-color: rgba(0,0,0,0.2);
+    border-left: rgba(0,0,0,1);
+    border-style: solid;
+    border-width: 6px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    font-style: italic;
+}
+
+hr {
+    width: 90%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+div {
+    width: 100%
+}
+/*Gebruikt voor onderdeeltitels.*/
+.title {
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-block-end: 0.5em;
+}
+
+.borderfix {
+    border-bottom: #5C4200;
+    border-left: #5C4200;
+    border-right: #5C4200;
+    border-radius: 8px;
+    border-width: 5px;
+    border-top-width: 0;
+    border-style: groove;
+    border-top-style: none;
+
+}
+
+/*MAIN SECTIE*/
+#SectieMAIN {
+    display: flex;
+    flex-direction: column;
+    border-bottom: #5C4200;
+    border-left: #5C4200;
+    border-right: #5C4200;
+    border-top: #b68300;
+    border-radius: 8px;
+    border-width: 5px;
+    border-style: groove;
+
+    background: rgb(194,140,0);
+    background: linear-gradient(90deg, rgba(194,140,0,1) 0%, rgba(174,125,0,1) 44%, rgba(151,114,17,1) 100%);
+    /*background-color: #b68300;*/
+    
+    /*height: 100vh;*/
+}
+
+#SectieMAINBACK {
+    display: none;
+    flex-direction: column;
+    border-bottom: #5C4200;
+    border-left: #5C4200;
+    border-right: #5C4200;
+    border-top: #b68300;
+    border-radius: 8px;
+    border-width: 5px;
+    border-style: groove;
+
+    background: rgb(194,140,0);
+    background: linear-gradient(90deg, rgba(194,140,0,1) 0%, rgba(174,125,0,1) 44%, rgba(151,114,17,1) 100%);
+    /*background-color: #b68300;*/
+    
+    /*height: 100vh;*/
+}
+
+#Hoofdtitel {
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding-top: 40px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 90px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #5C4200;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.SubtitelMAIN {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.SubSubtitel {
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+/*SECTIE 1*/
+#Sectie1 {
+    display: none;
+    flex-direction: column;
+    background-image: url(../Assets/Sectie1/BG.PNG);
+    /*height: 100vh;*/
+}
+
+.imagetext img {
+    min-width: 80%;
+    width: 1rem;
+}
+
+/*HEADER GEDEELTE*/
+.imagetext {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Wordt gebruikt om header kolommen op z'n plaats te houden, voor elke kolom extra 1 fr toevoegen..*/
+    grid-gap: 6.5em;
+    width: 100%;
+}
+@media screen and (max-width: 1500px) {
+    .imagetext {
+        grid-template-columns: 1fr;
+    }
+    .imagetext img {
+        min-width: 70%;
+        width: 1rem;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#Sectie2 {
+    display: none;
+    flex-direction: column;
+    background-image: url(../Assets/Sectie2/BG.PNG);
+}
+
+#Sectie3 {
+    display: none;
+    flex-direction: column;
+    background-image: url(../Assets/Sectie3/BG.PNG);
+}
+
+#FlashF {
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+}
+
+#FlashB {
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+}
+
+#Sectie4 {
+    display: none;
+    flex-direction: column;
+    background-image: url(../Assets/Sectie4/BG.PNG);
+}
