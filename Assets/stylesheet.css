@@ -16,6 +16,11 @@ body{
     padding-left: 4px;
 }
 
+sub{
+    font-style:italic;
+    color: rgb(42, 0, 60);
+}
+
 /*ALGEMEEN*/
 li{
     padding-bottom: 10px;
@@ -165,6 +170,7 @@ div {
     flex-direction: column;
     background-image: url(../Assets/Sectie1/BG.PNG);
     /*height: 100vh;*/
+    background-size: cover;
 }
 
 .imagetext img {
@@ -197,12 +203,14 @@ div {
     display: none;
     flex-direction: column;
     background-image: url(../Assets/Sectie2/BG.png);
+    background-size: cover;
 }
 
 #Sectie3 {
     display: none;
     flex-direction: column;
     background-image: url(../Assets/Sectie3/BG.png);
+    background-size: cover;
 }
 
 #FlashF {
@@ -221,4 +229,43 @@ div {
     display: none;
     flex-direction: column;
     background-image: url(../Assets/Sectie4/BG.png);
+    background-size: cover;
+}
+
+/*BRONNEN POP-UPS*/
+
+#popupDialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 20px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-image: url(../Assets/PaperBG.jpg);
+    background-size: cover;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 90%;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+button{
+    height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
 }
