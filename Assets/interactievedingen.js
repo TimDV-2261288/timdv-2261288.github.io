@@ -143,15 +143,48 @@ function show11(){
     popupFn();
 }
 
-document.getElementById("POP1AND2").addEventListener("click", show1AND2);
-document.getElementById("POP3").addEventListener("click", show3);
-document.getElementById("POP5AND8").addEventListener("click", show5AND8);
-document.getElementById("POP5").addEventListener("click", show5);
-document.getElementById("POP6").addEventListener("click", show6);
-document.getElementById("POP7").addEventListener("click", show7);
-document.getElementById("POP8").addEventListener("click", show8);
-document.getElementById("POP9").addEventListener("click", show9);
-document.getElementById("POP10").addEventListener("click", show10);
-document.getElementById("POP11").addEventListener("click", show11);
-document.getElementById("POPTEST").addEventListener("click", showtest);
+elements = document.getElementsByClassName("POP1AND2")
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show1AND2);
+}
+elements = document.getElementsByClassName("POP3");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show3);
+}
+elements = document.getElementsByClassName("POP5AND8");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show5AND8);
+}
+elements = document.getElementsByClassName("POP5");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show5);
+}
+elements = document.getElementsByClassName("POP6");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show6);
+}
+elements = document.getElementsByClassName("POP7");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show7);
+}
+elements = document.getElementsByClassName("POP8");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show8);
+}
+elements = document.getElementsByClassName("POP9");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show9);
+}
+elements = document.getElementsByClassName("POP10");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show10);
+}
+elements = document.getElementsByClassName("POP11");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", show11);
+}
+elements = document.getElementsByClassName("POPTEST");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", showtest);
+}
 
