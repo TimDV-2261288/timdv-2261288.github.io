@@ -188,3 +188,14 @@ for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener("click", showtest);
 }
 
+function ShowVideo(){
+    document.getElementById("VideoEdition").style.display ="grid";
+    document.getElementById("TextEdition").style.display ="none";
+}
+function ShowText(){
+    document.getElementById("VideoEdition").style.display ="none";
+    document.getElementById("TextEdition").style.display ="grid";
+}
+
+document.getElementById("ShowTheText").addEventListener("click", ShowText);
+document.getElementById("ShowTheVideo").addEventListener("click", ShowVideo);
